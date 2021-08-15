@@ -35,7 +35,7 @@ const LoginForm = () => {
           <Form lists = {lists}/>
         </form>
         
-        <div id="button" class="row">
+        <div id="button" className="row">
           <button>
             Sign In
           </button>
