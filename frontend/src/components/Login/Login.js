@@ -26,22 +26,22 @@ const LoginForm = () => {
 
   return (
     <div className="login">
-      <div id="loginform">
-        <h2 id="headerTitle">
+      <div className="loginForm">
+        <h2 className="headerTitle">
           Create Account
         </h2>
 
-        <form className="login__form">
+        <form>
           <Form lists = {lists}/>
         </form>
         
-        <div id="button" className="row">
+        <div className="row button">
           <button>
             Sign In
           </button>
         </div>
       </div>
-      <img src={image} alt="Logo" id='design-img'/>
+      <img src={image} alt="Logo" className='design-img'/>
     </div>
   );
 }
