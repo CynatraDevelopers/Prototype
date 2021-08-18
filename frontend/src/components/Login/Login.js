@@ -27,6 +27,7 @@ const LoginForm = () => {
   return (
     <div className="login">
       <div className="loginForm">
+        {/* <img src={image} alt="Logo" className=''/> */}
         <h2 className="headerTitle">
           Create Account
         </h2>
