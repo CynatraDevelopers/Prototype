@@ -67,3 +67,9 @@ html{
   display: inline;
   float: right;
 }
+
+.logo{
+  height: 100px;
+  width: 100px;
+  padding-left: 40%;
+}
