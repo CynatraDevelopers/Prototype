@@ -1,11 +1,13 @@
 import './Login.css'
-import image from '../../assets/img.png'
+import image from '../../assets/Path1.svg'
 import logo from '../../assets/logo.png'
 import { useState } from 'react'
 import Form from '../Form/Form';
+import { useHistory } from 'react-router-dom';
 
 const LoginForm = () => {
 
+  let history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   let lists = [
@@ -25,6 +27,10 @@ const LoginForm = () => {
     },
   ]
 
+  const signUp = (e) => {
+    e.preventDefault();
+    history.push("/signup")
+  }
   return (
     <div className="login">
       <div className="loginForm">
@@ -40,6 +46,9 @@ const LoginForm = () => {
         <div className="row button">
           <button>
             Login
+          </button>
+          <button onClick={signUp}>
+            Sign Up
           </button>
         </div>
       </div>

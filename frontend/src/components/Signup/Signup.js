@@ -1,5 +1,5 @@
 import '../Login/Login.css'
-import image from '../../assets/img.png'
+import image from '../../assets/Path1.svg'
 import logo from '../../assets/logo.png'
 import { useState } from 'react'
 import Form from '../Form/Form';
