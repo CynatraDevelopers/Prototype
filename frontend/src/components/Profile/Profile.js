@@ -1,44 +1,13 @@
 import './Profile.css'
 import { useState } from 'react';
 
-// const Profile = () => {
-//     return(
-//         <div className='Rect'>
-//             <div className='displayPicture'>                
-//             </div>
-//             <h2>Amritesh Amrit</h2>
-//             <h3 className='job'>Designer | Illustrator</h3>
-//             <hr></hr>
-//             <p className='heading'>Experience</p>
-
-//             <p className='subheading'>Head Designer</p>
-//             <p className='desc'>Building Blocks | Internship | 3 months</p>
-
-//             <p className='subheading'>Head Designer</p>
-//             <p className='desc'>Building Blocks | Internship | 3 months</p>
-
-//             <p className='subheading'>Head Designer</p>
-//             <p className='desc'>Building Blocks | Internship | 3 months</p>
-
-//             <p className='heading'>Education</p>
-//             <p className='heading'>Language</p>
-            
-
-//         </div>
-//     );
-// }
-// export default Profile;
-
 export function Profile() {
-// react Hook For State Handler
   const [data , setData]=useState(null)
-
-// Fetch Function   
   fetch("./fakedata.json").then(
     function(res){
     return res.json()
   }).then(function(data){
-  // store Data in State Data Variable
+
     setData(data)
   }).catch(
     function(err){
