@@ -7,7 +7,7 @@ const passport = require("passport");
 const auth = require("./routes/api/auth");
 const db = require("./config/keys").mongoURI;
 
-const userdetails=require("./routes/api/userdetails")
+//const userdetails = require("./routes/api/users")
 // Bodyparser middleware to parse the request
 //Can use express instead of bodyparser if bodyparser gives a warning of being deprecated
 app.use(
@@ -38,7 +38,7 @@ require("./config/passport")(passport);
 //api route for registration and login
 app.use("/api/auth",auth);
 
-app.use("/api/userdetails/",userdetails)
+//app.use("/api/userdetails/",userdetails)
 
 
 //passport.authenticate("jwt",{session:false}) should be used later to secure routes

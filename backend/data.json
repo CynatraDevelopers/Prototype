@@ -1,6 +1,5 @@
 {
-    "1":{    
-    "data":{
+    "1":{ 
     "name":"Mabel Kulas",
     "email":"Mabel_Kulas12@gmail.com",
     "following":["Sidney Swaniawski",
@@ -24,8 +23,8 @@
         "Anne Carter",
         "Mary Satterfield"
       ],
-      "A-O-E":["visual art","Stand-up"],
-      "W-E":[
+      "A_O_E":["visual art","Stand-up"],
+      "W_E":[
         "Schultz and Sons",
         "Terry, Becker and Kshlerin",
         "Kirlin and Sons",
@@ -36,10 +35,10 @@
         "King LLC",
         "Donnelly, Wolf and Schmidt",
         "Barton - Feeney"
-      ]
-}},
+      ],
+      "images":["https://firebasestorage.googleapis.com/v0/b/cynatra-36b3f.appspot.com/o/unnamed.jpg?alt=media&token=e1669298-1626-414b-b84c-94a4d97ae5ac"] 
+},
 "2":{
-"data":{
     "name": "Cristina Okuneva",
     "email": "Cristina_Okuneva178@gmail.com",
     "following": [
@@ -62,17 +61,17 @@
       "Emilio Kling",
       "Jordan Sipes"
     ],
-    "W-E": [
+    "W_E": [
       "Parker Group",
       "Swaniawski - Krajcik",
       "Nienow Inc",
       "Schmeler Group"
     ],
-    "A-O-E":["Performing art"]
-  }}
+    "A_O_E":["Performing art"],
+    "images":["https://firebasestorage.googleapis.com/v0/b/cynatra-36b3f.appspot.com/o/download.jfif?alt=media&token=614371f2-158a-4aeb-af5a-4f4c717c769e"]
+  }
 ,
-  "3":{
-      "data":
+  "3":
         {
             "name":"Martin Labadie",
             "email":"Martin_labadie@hotmail.com",
@@ -86,9 +85,10 @@
                 "Lindsey Cremin",
                 "Elaine Breitenberg Jr.",
                 "Melanie Zulauf"],
-            "we":
+            "W_E":
                 ["O'Connell, Jakubowski and Gutmann","Hane - Glover","Corkery Inc","Senger - Ebert","Durgan and Sons","Kutch - Mitchell","Swaniawski, Gaylord and Mayert","Green, Huel and Conn"],                
-            "A-O-E":["Fashion design"]    
-    }}
+            "A_O_E":["Fashion design"],
+            "images":["https://firebasestorage.googleapis.com/v0/b/cynatra-36b3f.appspot.com/o/download.jfif?alt=media&token=614371f2-158a-4aeb-af5a-4f4c717c769e"]    
+    }
 
 }

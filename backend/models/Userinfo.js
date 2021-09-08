@@ -1,23 +1,26 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const UInfo = new Schema({
-    name: {
-        type:String,
-        required:true
-    },
+const UserInfoSchema = new Schema({
     email: {
         type:String,
         required:true
     },
-    password: {
-        type:String,
-        required:true
+    followers:{
+        type:[String],
     },
-    date: {
-        type: Date,
-        default: Date.now
+    following:{
+        type:[String]
+    },
+    W_E :{
+        type:[String]
+    },
+    A_O_E:{
+        type:[String]
+    },
+    images:{
+        type:[String]
     },
 });
 
-module.exports= User = mongoose.model("users",Userschema);
+module.exports= Userinfo = mongoose.model("usersinfo",UserInfoSchema);

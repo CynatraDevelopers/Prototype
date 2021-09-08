@@ -10,6 +10,7 @@ const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
+const Userinfo = require("../../models/UserInfo");
 
 // @route POST api/auth/register
 // @desc Register user
@@ -94,5 +95,30 @@ router.post("/login", (req, res) => {
       });
     });
   });
+
+  router.get("/userinfo", (req,res) =>{
+
+    const email = req.body.email;
+
+    Userinfo.find({})
+    .then(data => res.json(data))
+    .catch(err => res.status(400).json(err));
+
+  });
+
+  router.post("/userprof", (req,res) =>{
+
+    const email = req.body.email;
+
+    const newuser = new Userinfo({
+      email:req.body.email
+    });
+
+    newuser.save()
+    .then(data=>res.json(data))
+    .catch(err => res.status(400).json(err))
+
+  });
+
 
   module.exports = router;
