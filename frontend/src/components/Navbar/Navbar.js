@@ -1,6 +1,7 @@
 import './Navbar.css'
 import { FaHome, FaBell, FaShareAlt } from 'react-icons/fa';
 import { FiSettings } from 'react-icons/fi'
+import Explore from '../ExploreFeed/ExploreFeed';
 
 function NavigationBar() {
     return (
@@ -26,6 +27,7 @@ function NavigationBar() {
             <p className="SettingsText">Settings</p>
           </div>
         </div>
+        <Explore></Explore>
       </div>
     );
   }
