@@ -29,7 +29,9 @@ function NavigationBar() {
             </div>
           </div>
         </div>
-        <Explore></Explore>
+        <div className="exp">
+          <Explore></Explore>
+        </div>
       </div>
     );
   }
