@@ -3,7 +3,7 @@ import image from '../../assets/Path1.svg'
 import logo from '../../assets/logo.png'
 import { useState } from 'react'
 import Form from '../Form/Form';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const LoginForm = () => {
 
@@ -47,9 +47,10 @@ const LoginForm = () => {
           <button>
             Login
           </button>
-          <button onClick={signUp}>
-            Sign Up
-          </button>
+          <div className="signup__link">
+            {"If you don't have account "}
+            <Link to="/signup">Sign Up</Link>
+          </div>
         </div>
       </div>
       <img src={image} alt="Logo" className='design-img'/>
