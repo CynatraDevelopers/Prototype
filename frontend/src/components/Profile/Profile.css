@@ -1,0 +1,61 @@
+.Rect {
+  /* position: fixed; */
+  display: inline-block;
+  margin-left: 16px;
+  width: 300px;
+  background: #16a3ef;
+  transition-property: width;
+  transition-duration: 1s;
+  text-align: center;
+}
+
+.displayPicture {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin: 25px;
+  margin-bottom: 0;
+}
+
+.profession {
+  color: white;
+}
+
+hr {
+  height: 1.5px;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
+
+.heading {
+  text-align: left;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.subheading {
+  text-align: left;
+  padding-left: 15px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.desc {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.iconEdit {
+  width: 15px;
+  height: 15px;
+  color: black;
+  float: right;
+  padding-right: 15px;
+}
