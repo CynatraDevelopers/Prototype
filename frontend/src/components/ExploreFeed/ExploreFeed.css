@@ -4,9 +4,10 @@
     grid-auto-rows: 200px 400px;
     grid-gap: 10px;
     grid-auto-flow: dense;
-    margin-left: 50px;
+    margin-left: 140px;
     margin-top: 20px;
     margin-right: 20px;
+    z-index: -1;
   }
   
   .gallery-item{

@@ -1,126 +1,127 @@
 .Rect {
-    position: fixed;
-    display: inline-block;
-    margin-left: 16px;
-    margin-top: 20px;
-    width: 80px;
-    height: 94vh;
-    background: black;
-    border-radius: 20px;
-    transition-property: width;
-    transition-duration: 1s;
-  }
+  position: fixed;
+  display: inline-block;
+  margin-left: 16px;
+  margin-top: 20px;
+  width: 80px;
+  height: 94vh;
+  background: black;
+  border-radius: 20px;
+  transition-property: width;
+  transition-duration: 1s;
+  z-index: 2;
+}
   
-  .Circle {
-    position: relative;
-    left: 2.1vh;
-    top: 5vh;
-    background: #64d2ff;
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-  }
+.Circle {
+  position: relative;
+  left: 2.1vh;
+  top: 5vh;
+  background: #64d2ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
   
-  .AccName{
-    display:none;
-    margin-left: 70px;
-    margin-top: 10px;
-    font-size: 20px;
-    color: white;
-  }
+.AccName{
+  display:none;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
   
-  .HomeText{
-    display:none;
-    margin-left: 70px;
-    margin-top: 20px;
-    font-size: 20px;
-    color: white;
-  }
+.HomeText{
+  display:none;
+  margin-left: 70px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
   
-  .Rect:hover {
-    width: 240px;
-  }
+.Rect:hover {
+  width: 240px;
+}
   
-  .Rect:hover .AccName{
-    display: inline-block;
-  }
+.Rect:hover .AccName{
+  display: inline-block;
+}
   
-  .iconHome{
-    color: white;
-    width: 30px;
-    height: 30px;
-    margin-top: 15vh;
-    margin-left: 3.5vh;
-  }
+.SettingsText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
   
-  .iconBell{
-    color: white;
-    width: 30px;
-    height: 30px;
-    margin-top: 7vh;
-    margin-left: 3.5vh;
-  }
+.Rect:hover .SettingsText{
+  display: block;
+}
   
-  .iconShare{
-    color: white;
-    width: 30px;
-    height: 30px;
-    margin-top: 7vh;
-    margin-left: 3.5vh;
-  }
+.HomeText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
   
-  .iconSettings{
-    color: white;
-    width: 30px;
-    height: 30px;
-    margin-top: 7vh;
-    margin-left: 3.5vh;
-  }
+.Rect:hover .HomeText{
+  display: block;
+}
   
-  .SettingsText{
-    display:none;
-    margin-left: 80px;
-    margin-top: -35px;
-    font-size: 20px;
-    color: white;
-  }
+.BellText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
   
-  .Rect:hover .SettingsText{
-    display: block;
-  }
+.Rect:hover .BellText{
+  display: block;
+}
   
-  .HomeText{
-    display:none;
-    margin-left: 80px;
-    margin-top: -35px;
-    font-size: 20px;
-    color: white;
-  }
+.ShareText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
   
-  .Rect:hover .HomeText{
-    display: block;
-  }
+.Rect:hover .ShareText{
+  display: block;
+}
+
+.iconHome{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 15vh;
+  margin-left: 1vh;
+}
   
-  .BellText{
-    display:none;
-    margin-left: 80px;
-    margin-top: -35px;
-    font-size: 20px;
-    color: white;
-  }
+.iconBell{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 7vh;
+  margin-left: 1vh;
+}
   
-  .Rect:hover .BellText{
-    display: block;
-  }
+.iconShare{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 7vh;
+  margin-left: 1vh;
+}
   
-  .ShareText{
-    display:none;
-    margin-left: 80px;
-    margin-top: -35px;
-    font-size: 20px;
-    color: white;
-  }
-  
-  .Rect:hover .ShareText{
-    display: block;
-  }
+.iconSettings{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 7vh;
+  margin-left: 1vh;
+}

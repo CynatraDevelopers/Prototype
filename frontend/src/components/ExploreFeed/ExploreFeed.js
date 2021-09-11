@@ -8,7 +8,27 @@ function Explore() {
                         <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
                     </div>
                 </div>
-                <div className="gallery-item w-1 h-3">
+                <div className="gallery-item w-1 h-2">
+                    <div class="image"> 
+                        <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
+                    </div>
+                </div>
+                <div className="gallery-item w-1 h-1">
+                    <div class="image"> 
+                        <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
+                    </div>
+                </div>
+                <div className="gallery-item">
+                    <div class="image"> 
+                        <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
+                    </div>
+                </div>
+                <div className="gallery-item w-4 h-1">
+                    <div class="image"> 
+                        <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
+                    </div>
+                </div>
+                <div className="gallery-item w-1 h-2">
                     <div class="image"> 
                         <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
                     </div>
@@ -18,7 +38,12 @@ function Explore() {
                         <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
                     </div>
                 </div>
-                <div className="gallery-item">
+                <div className="gallery-item w-1 h-1">
+                    <div class="image"> 
+                        <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
+                    </div>
+                </div>
+                <div className="gallery-item w-2 h-1">
                     <div class="image"> 
                         <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
                     </div>
