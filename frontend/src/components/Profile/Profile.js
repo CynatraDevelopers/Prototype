@@ -22,7 +22,7 @@ export function Profile() {
        data? data.map(
           function(data){
                   return (
-                    <div className="Rect"> 
+                    <div className="profileBar"> 
                         <img className="displayPicture" src={data.url} alt="profile-img"/>
                         <h2>{data.name}</h2>
                         <h3 className='profession'>{data.profession}</h3>
