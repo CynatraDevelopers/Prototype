@@ -2,6 +2,7 @@ import './Profile.css'
 import { useState } from 'react';
 import {MdModeEdit} from 'react-icons/md'
 
+
 export function Profile() {
   const [data , setData]=useState(null)
   fetch("./fakedata.json").then(
@@ -17,7 +18,7 @@ export function Profile() {
   )
 
   return (
-    <div className="App">
+    <div className="App profile">
       {
        data? data.map(
           function(data){
@@ -43,7 +44,7 @@ export function Profile() {
                                 </div>                          
                         })}
                         <p className='heading'>Language<MdModeEdit className="iconEdit"/></p>
-                        <p className="desc">{data.language}</p>                        
+                        <p className="desc">{data.language}</p>                       
                     </div>)
           }
         ):""

@@ -11,19 +11,19 @@ function NavigationBar() {
             <div className="Circle">
               <p className="AccName">AccountName</p>
             </div>
-            <div>
+            <div className="text__navbar">
               <FaHome className="iconHome"/>
               <p className="HomeText">Home</p>
             </div>
-            <div>
+            <div className="text__navbar">
               <FaBell className="iconBell"/>
               <p className="BellText">Notifications</p>
             </div>
-            <div>
+            <div className="text__navbar">
               <FaShareAlt className="iconShare"/>
               <p className="ShareText">Share</p>
             </div>
-            <div>
+            <div className="text__navbar">
               <FiSettings className="iconSettings"/>
               <p className="SettingsText">Settings</p>
             </div>

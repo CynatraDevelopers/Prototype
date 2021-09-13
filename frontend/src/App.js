@@ -2,7 +2,7 @@ import './App.css';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import LoginForm from './components/Login/Login';
 import SignupForm from './components/Signup/Signup';
-import Profile from './components/Profile/Profile';
+import Profile from './components/Profile/Main_Profile';
 import NavigationBar from './components/Navbar/Navbar';
 
 function App() {

@@ -1,8 +1,20 @@
 import './ExploreFeed.css'
 
-function Explore() {
+function Explore(props) {
     return(
-        <div className="container">
+        <div className="explore__feed">
+                <div className="container__sections">
+                    <div className="container__category">
+                        {"Illustrations"}
+                    </div>
+                    <div className="container__category">
+                        {"Illustrations"}
+                    </div>
+                    <div className="container__category">
+                        {"Illustrations"}
+                    </div>
+                </div>
+                <div className="container">
                 <div className="gallery-item w-2 h-2">
                     <div class="image"> 
                         <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
@@ -48,6 +60,7 @@ function Explore() {
                         <img src="https://source.unsplash.com/random" alt="digital-art"></img> 
                     </div>
                 </div>
+        </div>
         </div>
     );
 }

@@ -48,7 +48,7 @@
 }
   
 .Rect:hover {
-  width: 240px;
+  width: 15.7rem;
 }
   
 .Rect:hover .AccName{
@@ -133,4 +133,9 @@
   height: 30px;
   margin-top: 7vh;
   margin-left: 1vh;
+}
+
+.text__navbar{
+  margin-left: 2.1vh;
+  cursor: pointer;
 }
