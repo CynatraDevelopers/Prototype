@@ -100,12 +100,31 @@ router.post("/login", (req, res) => {
 
     const email = req.body.email;
 
+    Userinfo.findOne({email:email})
+    .then(data => {
+        if(data == null){
+          res.json({error:"User email not found"})
+        }
+        else{
+          res.json(data)
+        }
+    })
+    .catch(err => res.status(400).json(err));
+
+  });
+
+  //test
+  router.get("/userfullinfo", (req,res) =>{
+
+    const email = req.body.email;
+
     Userinfo.find({})
     .then(data => res.json(data))
     .catch(err => res.status(400).json(err));
 
   });
 
+  //test
   router.post("/userprof", (req,res) =>{
 
     const email = req.body.email;
