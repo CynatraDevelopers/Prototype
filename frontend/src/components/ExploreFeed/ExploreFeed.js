@@ -1,4 +1,4 @@
-import './ExploreFeed.css'
+import './ExploreFeed.css';
 
 function Explore(props) {
     return(

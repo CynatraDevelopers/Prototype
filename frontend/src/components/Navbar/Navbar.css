@@ -25,7 +25,8 @@
   position: relative;
   left: 2.1vh;
   top: 5vh;
-  background: #64d2ff;
+  background-image: url('https://data.whicdn.com/images/338888145/original.jpg');
+  background-size: cover;
   width: 50px;
   height: 50px;
   border-radius: 30px;
@@ -138,4 +139,38 @@
 .text__navbar{
   margin-left: 2.1vh;
   cursor: pointer;
+}
+
+.explore__top{
+  margin-left: 12rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.search__div{
+  background-color: white;
+  border: 0;
+}
+.explore__search{
+  font-size: 3rem;
+  margin-left: 5px;
+  color: #64d2ff;
+  cursor: pointer;
+}
+.top__name{
+  margin-right: 2rem;
+  /* text-align: right; */
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* justify-content: center; */
+  text-align: center;
+  
+}
+.top__text{
+  width: 60vw;
+  background-color: #64d2ff;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 20px;
+  /* color: white; */
 }
