@@ -1,0 +1,176 @@
+.NavBar{
+	position: fixed;
+	bottom: 20px;
+	z-index: 2;
+}
+
+.exp{
+	position:relative;
+	margin-left: 30px;
+}
+
+.Rect {
+  display: inline-block;
+  margin-left: 16px;
+  /* margin-top: 20px; */
+  width: 80px;
+  height: 94vh;
+  background: black;
+  border-radius: 20px;
+  transition-property: width;
+  transition-duration: 1s;
+}
+  
+.Circle {
+  position: relative;
+  left: 2.1vh;
+  top: 5vh;
+  background-image: url('https://data.whicdn.com/images/338888145/original.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+  
+.AccName{
+  display:none;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+  
+.HomeText{
+  display:none;
+  margin-left: 70px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+  
+.Rect:hover {
+  width: 15.7rem;
+}
+  
+.Rect:hover .AccName{
+  display: inline-block;
+}
+  
+.SettingsText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
+  
+.Rect:hover .SettingsText{
+  display: block;
+}
+  
+.HomeText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
+  
+.Rect:hover .HomeText{
+  display: block;
+}
+  
+.BellText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
+  
+.Rect:hover .BellText{
+  display: block;
+}
+  
+.ShareText{
+  display:none;
+  margin-left: 80px;
+  margin-top: -35px;
+  font-size: 20px;
+  color: white;
+}
+  
+.Rect:hover .ShareText{
+  display: block;
+}
+
+.iconHome{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 15vh;
+  margin-left: 1vh;
+}
+  
+.iconBell{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 7vh;
+  margin-left: 1vh;
+}
+  
+.iconShare{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 7vh;
+  margin-left: 1vh;
+}
+  
+.iconSettings{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 7vh;
+  margin-left: 1vh;
+}
+
+.text__navbar{
+  margin-left: 2.1vh;
+  cursor: pointer;
+}
+
+.explore__top{
+  margin-left: 12rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.search__div{
+  background-color: white;
+  border: 0;
+}
+.explore__search{
+  font-size: 3rem;
+  margin-left: 5px;
+  color: #64d2ff;
+  cursor: pointer;
+}
+.top__name{
+  margin-right: 2rem;
+  /* text-align: right; */
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* justify-content: center; */
+  text-align: center;
+  
+}
+.top__text{
+  width: 60vw;
+  background-color: #64d2ff;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 20px;
+  /* color: white; */
+}
