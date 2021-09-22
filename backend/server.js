@@ -6,6 +6,9 @@ const passport = require("passport");
 //const users = require("./routes/api/users");
 const auth = require("./routes/api/auth");
 const db = require("./config/keys").mongoURI;
+const cors = require("cors");
+
+app.use(cors());
 
 //const userdetails = require("./routes/api/users")
 // Bodyparser middleware to parse the request
