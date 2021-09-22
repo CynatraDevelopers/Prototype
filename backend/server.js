@@ -6,7 +6,11 @@ const passport = require("passport");
 //const users = require("./routes/api/users");
 const auth = require("./routes/api/auth");
 const db = require("./config/keys").mongoURI;
+const cors = require("cors");
 
+app.use(cors());
+
+//const userdetails = require("./routes/api/users")
 // Bodyparser middleware to parse the request
 //Can use express instead of bodyparser if bodyparser gives a warning of being deprecated
 app.use(
@@ -30,17 +34,18 @@ mongoose
   .catch(err => console.log(err));
 
   //initialise passport dependency
-  app.use(passport.initialize());
-    
-  //passport configuration to jsonwebtoken strategy
-  require("./config/passport")(passport);
+app.use(passport.initialize());
+  
+//passport configuration to jsonwebtoken strategy
+require("./config/passport")(passport);
+//api route for registration and login
+app.use("/api/auth",auth);
 
-  //api route for registration and login
-  app.use("/api/auth",auth);
+//app.use("/api/userdetails/",userdetails)
 
-  //passport.authenticate("jwt",{session:false}) should be used later to secure routes
-  //app.use("/api/users",users);
 
-  //port configuration
+//passport.authenticate("jwt",{session:false}) should be used later to secure routes
+//app.use("/api/users",users);
+//port configuration
 const port = process.env.PORT || 5000; // process.env.port is Heroku's port if you choose to deploy the app there
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));

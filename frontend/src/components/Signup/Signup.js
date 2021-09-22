@@ -1,16 +1,24 @@
-import './Login.css'
+import '../Login/Login.css'
 import image from '../../assets/Path1.svg'
 import logo from '../../assets/logo.png'
 import { useState } from 'react'
 import Form from '../Form/Form';
-import { Link, useHistory } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
-const LoginForm = () => {
+const SignupForm = () => {
 
-  let history = useHistory();
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   let lists = [
+    {
+      description: "Username",
+      type: "text",
+      placeholder: "",
+      value: username,
+      setValue: setUsername,
+    },
     {
       description: "Email",
       type: "text",
@@ -25,12 +33,16 @@ const LoginForm = () => {
       value: password,
       setValue: setPassword,
     },
+    {
+      description: "Confirm Password",
+      type: "password",
+      placeholder: "",
+      value: confirmPassword,
+      setValue: setConfirmPassword,
+    },
+
   ]
 
-  const signUp = (e) => {
-    e.preventDefault();
-    history.push("/signup")
-  }
   return (
     <div className="login">
       <div className="loginForm">
@@ -45,11 +57,11 @@ const LoginForm = () => {
         
         <div className="row button">
           <button>
-            Login
+            Sign Up
           </button>
           <div className="signup__link">
-            {"If you don't have account "}
-            <Link to="/signup">Sign Up</Link>
+            {"Already have an account "}
+            <Link to="/">Login</Link>
           </div>
         </div>
       </div>
@@ -58,7 +70,7 @@ const LoginForm = () => {
   );
 }
  
-export default LoginForm;
+export default SignupForm;
 
 
 /*

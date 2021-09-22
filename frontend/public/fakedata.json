@@ -1,0 +1,23 @@
+[{
+    "url":"https://data.whicdn.com/images/338888145/original.jpg",
+    "name":"Jelly",
+    "profession":"Designer | Illustrator",
+    "experience":[
+        {
+            "position":"Head Designer",
+            "description" : "Building Blocks | Internship | 3 months"
+        },
+        {
+            "position":"Head Designer",
+            "description" : "Building Blocks | Internship | 3 months"
+        }
+    ],        
+
+    "education" : [{
+        "degree":"Bachelor of Design",
+        "college":"PES University"
+    }],
+    "language" : "English | Hindi | German"
+}
+
+]

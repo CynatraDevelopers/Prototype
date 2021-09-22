@@ -1,0 +1,96 @@
+.profile__explore{
+  /* margin-left: -8rem; */
+  margin-left: 12rem;
+  margin-top: 5rem;
+}
+.profile__top{
+  margin-left: 10rem;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  /* position: absolute; */
+  /* margin-top: 2rem; */
+}
+.profile__right{
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.profile__explore{
+  margin-top: 3rem;
+  /* margin-left: -5rem; */
+}
+.back{
+  font-size: 2.5rem;
+  color: #16a3ef;
+  cursor: pointer;
+}
+
+.profileBar {
+  /* position: fixed; */
+  position: fixed;
+  left: 16px;
+  display: inline-block;
+  /* margin-left: 16px; */
+  width: 300px;
+  /* width: auto; */
+  height: 100vh;
+  background: #16a3ef;
+  transition-property: width;
+  transition-duration: 1s;
+  text-align: center;
+}
+.profile{
+  display: flex;
+}
+
+.displayPicture {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin: 25px;
+  margin-bottom: 0;
+}
+
+.profession {
+  color: white;
+}
+
+hr {
+  height: 1.5px;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
+
+.heading {
+  text-align: left;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.subheading {
+  text-align: left;
+  padding-left: 15px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.desc {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.iconEdit {
+  width: 15px;
+  height: 15px;
+  color: black;
+  float: right;
+  padding-right: 15px;
+}
