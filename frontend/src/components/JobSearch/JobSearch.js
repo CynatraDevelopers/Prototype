@@ -4,6 +4,9 @@ import { FiSettings } from 'react-icons/fi'
 import { TextField } from '@mui/material';
 
 function JobSearch() {
+    const submitSearch = (e) => {
+        e.preventDefault();
+    }
     return(
         <div className="HeaderBar">
             <div className="Title">
