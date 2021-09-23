@@ -1,5 +1,5 @@
 Cynatra
 
-Use "npm run server" in the console to run server.js
+Use "npm run dev" in the console to run the whole project
 
 node_modules ignored due to large size of the folder. So be sure to install them explicitly through package.json.
