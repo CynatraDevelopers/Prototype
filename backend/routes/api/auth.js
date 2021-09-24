@@ -176,6 +176,7 @@ router.post("/postjobs", (req, res) => {
 
 });
 
+/*
 router.post("/applied", (req, res) => {
 
   const newJob = new Jobs({
@@ -195,6 +196,6 @@ router.post("/applied", (req, res) => {
     .catch(err => res.status(400).json(err));
 
 });
-
+*/
 
 module.exports = router;
