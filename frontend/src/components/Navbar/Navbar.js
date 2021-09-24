@@ -1,8 +1,8 @@
 import './Navbar.css'
 import { FaHome, FaBell, FaShareAlt } from 'react-icons/fa';
-import { FiSettings } from 'react-icons/fi'
+import { FiSettings,  FiBriefcase} from 'react-icons/fi'
 import Explore from '../ExploreFeed/ExploreFeed';
-import {useHistory} from 'react-router-dom';
+import {useHistory} from 'react-router-dom'; 
 
 function NavigationBar() {
     let history = useHistory();
@@ -29,6 +29,10 @@ function NavigationBar() {
             <div className="text__navbar" onClick={navigator.clipboard.writeText("http://localhost:3000/profile")}>
               <FaShareAlt className="iconShare"/>
               <p className="ShareText">Share</p>
+            </div>
+            <div className="text__navbar" onClick={()=>handelRedirect("jobs")}>
+              <FiBriefcase className="iconJob"/>
+              <p className="JobsText">Jobs</p>
             </div>
             <div className="text__navbar" onClick={()=>handelRedirect("explore")}>
               <FiSettings className="iconSettings"/>
