@@ -8,11 +8,13 @@
   /* height: 800px; */
   height: auto;
   position: relative;
+  margin-top: 0px;
 }
 .jobBodyHeader {
   background-color: black;
   height: 50px;
   border-radius: 15px;
+  position: relative;
 }
 .jobBodyHeaderText {
   color: white;
@@ -24,7 +26,7 @@
   background-color: white;
   border-radius: 15px;
   height: 170px;
-  width: 250px;
+  width: 225px;
   margin: 25px;
   display: inline-block;
   vertical-align: top;
@@ -69,3 +71,117 @@
   padding-left: 15px;
   padding-top: 5px;
 }
+
+.Title{
+  margin-left: 80rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Search{
+  margin-top: 22px;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.Searchtext{
+  width: 45rem;
+  height: 3.5rem;
+}
+
+.NavBarJobs{
+  position: absolute;
+  top: 20px;
+  /* margin-top: -10rem; */
+  margin-left: 52rem;
+  background-color: black;
+  height: 3.5rem;
+  width: 40rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  z-index: 4;
+}
+
+.iconHomeJobs{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  margin-left: 100px;
+}
+
+.iconBellJobs{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  margin-left: 100px;
+}
+
+.iconShareJobs{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  margin-left: 100px;
+}
+
+.iconSettingsJobs{
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  margin-left: 100px;
+}
+
+.RectName{
+  background-color: #16A3EF;
+  width: 12rem;
+  height: 2.5rem;
+  margin-top: -3.5rem;
+  margin-left: 75rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  z-index: 2;
+}
+
+.RectCareer{
+  background-color: #16A3EF;
+  width: 12rem;
+  height: 2.5rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  z-index: 2;
+}
+
+.CareerText{
+  text-align: center;
+  padding-top: 0.3rem;
+  font-weight: bold;
+}
+
+.ProfilePic{
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  background-image: url('https://data.whicdn.com/images/338888145/original.jpg');
+  margin-left: 1360px;
+  margin-top: -3rem;
+  z-index: 3;
+}
+
+.Username{
+  padding-left: 72px;
+  padding-top: 4.8px;
+  font-weight: bold;
+}
+
+/* @media only screen and (min-width: 825px) {
+  .ProfilePic {display: none;}
+  .Username {display: none;}
+  .RectName {display: none;}
+  .RectCareer {display: none;}
+  .CareerText {display: none;}
+  .NavBar{position: absolute ; right: 90px;}
+  .Title{position: absolute; right: 50px}
+} */

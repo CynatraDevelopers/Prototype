@@ -154,7 +154,7 @@
 .explore__search{
   font-size: 3rem;
   margin-left: 5px;
-  color: #64d2ff;
+  color: #16a3ef;
   cursor: pointer;
 }
 .top__name{
@@ -168,7 +168,7 @@
 }
 .top__text{
   width: 60vw;
-  background-color: #64d2ff;
+  background-color: #16a3ef;
   border: 0;
   border-radius: 5px;
   margin-right: 20px;
