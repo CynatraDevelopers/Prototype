@@ -11,7 +11,7 @@ const Jobschema = new Schema({
         required: true
     },
     applied: {
-        type: [String]
+        type: Number
     }
 });
 

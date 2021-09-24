@@ -159,7 +159,8 @@ router.post("/postjobs", (req, res) => {
 
   const newJob = new Jobs({
     title: req.body.title,
-    desc: req.body.desc
+    desc: req.body.desc,
+    applied: 1
   });
   newJob
     .save()
@@ -175,5 +176,26 @@ router.post("/postjobs", (req, res) => {
 
 });
 
+/*
+router.post("/applied", (req, res) => {
+
+  const newJob = new Jobs({
+    title: req.body.title,
+    desc: req.body.desc
+  });
+  newJob
+    .save()
+    .then(data => {
+      if (data == null) {
+        res.status(400).json({ Data: "Cannot Post" })
+      }
+      else {
+        res.json(data)
+      }
+    })
+    .catch(err => res.status(400).json(err));
+
+});
+*/
 
 module.exports = router;
