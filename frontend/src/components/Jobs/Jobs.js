@@ -11,11 +11,17 @@ class JobFeed extends Component {
     constructor() {
         super();
         this.state = {
+            data2: {},
             data: null
         }
     }
 
     componentDidMount() {
+
+        const userEmail = {
+            email: "Cristina_Okuneva178@gmail.com"
+        }
+
         axios
             .get("/api/auth/jobs")
             .then(data => {
@@ -25,6 +31,17 @@ class JobFeed extends Component {
                 });
             })
             .catch(err => console.log(err));
+
+        axios
+            .post("/api/auth/userinfo", userEmail)
+            .then(res => {
+                this.setState({
+                    data2: res.data
+                })
+            })
+            .catch(err => {
+                console.log(err)
+            });
     }
     submitSearch = (e) => {
         e.preventDefault();
@@ -32,7 +49,7 @@ class JobFeed extends Component {
 
     render() {
 
-        const { data } = this.state;
+        const { data, data2 } = this.state;
 
         const jobsfed = data != null ? data.map((feed, key) => (
             <div className="jobRect" key={key}>
@@ -46,58 +63,58 @@ class JobFeed extends Component {
 
         return (
             <div>
-            <div className="jobHeader">
-                {/* <div className="Title">
+                <div className="jobHeader">
+                    {/* <div className="Title">
                     {"C Y N A T R A"}
                 </div> */}
-                <div className="Search">
-                    <form>
-                        <TextField 
-                                id="outlined-basic" 
-                                className="Searchtext" 
-                                label="Search" 
+                    <div className="Search">
+                        <form>
+                            <TextField
+                                id="outlined-basic"
+                                className="Searchtext"
+                                label="Search"
                                 variant="outlined"
-                        />
-                        <button className="search__div" onClick={this.submitSearch}>
-                            <i class="fas fa-search explore__search"></i>
-                        </button>
-                    </form>
+                            />
+                            <button className="search__div" onClick={this.submitSearch}>
+                                <i class="fas fa-search explore__search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div className="NavBarJobs">
+                        <FaHome className="iconHomeJobs" />
+                        <FaBell className="iconBellJobs" />
+                        <FaShareAlt className="iconShareJobs" />
+                        <FiSettings className="iconSettingsJobs" />
+                    </div>
+                    <div className="ProfileInfo">
+                        <div className="RectCareer">
+                            <p className="CareerText">Career</p>
+                        </div>
+                        <div className="RectName">
+                            <p className="Username">{data2.name}</p>
+                        </div>
+                        <div className="ProfilePic" />
+                    </div>
                 </div>
-                <div className="NavBarJobs">
-                    <FaHome className = "iconHomeJobs"/>
-                    <FaBell className = "iconBellJobs"/>
-                    <FaShareAlt className = "iconShareJobs"/>
-                    <FiSettings className = "iconSettingsJobs"/>
-                </div> 
-                <div className = "ProfileInfo">
-                    <div className = "RectCareer">
-                        <p className="CareerText">Career</p>
+                <div className="jobBody">
+                    <div className="jobBodyHeader">
+                        <p className="jobBodyHeaderText">Explore Opportunities</p>
+                        <div className="row button">
+                            <Link to="/postjobs"><button style={{ "marginBottom": "20px" }}>Post</button></Link>
+                        </div>
                     </div>
-                    <div className = "RectName">
-                        <p className = "Username">Jelly</p>
+
+
+
+                    {data != null && jobsfed}
+
+
+
+                    <div className="messagingRect">
+                        <p className="messagingRectText">Messaging</p>
                     </div>
-                    <div className = "ProfilePic"/>
                 </div>
             </div>
-            <div className="jobBody">
-                <div className="jobBodyHeader">
-                    <p className="jobBodyHeaderText">Explore Opportunities</p>
-                    <div className="row button">
-                        <Link to="/postjobs"><button style={{ "marginBottom": "20px" }}>Post</button></Link>
-                    </div>
-                </div>
-
-                
-
-                {data != null && jobsfed}
-
-                
-
-                <div className="messagingRect">
-                    <p className="messagingRectText">Messaging</p>
-                </div>
-            </div>
-        </div>
         );
 
     }
