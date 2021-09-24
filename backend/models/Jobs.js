@@ -10,6 +10,9 @@ const Jobschema = new Schema({
         type: String,
         required: true
     },
+    applied: {
+        type: [String]
+    }
 });
 
 module.exports = Jobs = mongoose.model("jobs", Jobschema);

@@ -11,6 +11,7 @@ const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
 const Userinfo = require("../../models/UserInfo");
+const Jobs = require("../../models/Jobs")
 
 // @route POST api/auth/register
 // @desc Register user
@@ -136,6 +137,41 @@ router.post("/userprof", (req, res) => {
   newuser.save()
     .then(data => res.json(data))
     .catch(err => res.status(400).json(err))
+
+});
+
+router.get("/jobs", (req, res) => {
+
+  Jobs.find({})
+    .then(data => {
+      if (data == null) {
+        res.status(400).json({ Data: "No Data Found" })
+      }
+      else {
+        res.json(data)
+      }
+    })
+    .catch(err => res.status(400).json(err));
+
+});
+
+router.post("/postjobs", (req, res) => {
+
+  const newJob = new Jobs({
+    title: req.body.title,
+    desc: req.body.desc
+  });
+  newJob
+    .save()
+    .then(data => {
+      if (data == null) {
+        res.status(400).json({ Data: "Cannot Post" })
+      }
+      else {
+        res.json(data)
+      }
+    })
+    .catch(err => res.status(400).json(err));
 
 });
 
