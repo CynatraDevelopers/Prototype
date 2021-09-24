@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { withRouter, Link } from 'react-router-dom';
 import axios from "axios";
-import { padding } from "@mui/system";
 
 class PostJobs extends Component {
     constructor() {
@@ -28,39 +27,39 @@ class PostJobs extends Component {
             .post("/api/auth/postjobs", newLove)
             .then(data => {
                 console.log(data);
-                this.props.history.push("/");
+                this.props.history.push("/jobs");
             })
             .catch(err => console.log(err))
     }
 
     render() {
         return (
-            <div className="">
+            <div className="div1" style={{ "padding-top": "3rem", "paddingLeft": "3rem" }}>
                 <div style={{ marginTop: "4rem" }} className="row">
                     <div className="col s8 offset-s2">
                         <div className="col s12" style={{ paddingLeft: "0px" }}>
-                            <h4>
+                            <h4 style={{ "fontSize": "21px", "paddingLeft": "2rem" }}>
                                 Post your <b>Job</b> below
                             </h4>
                         </div>
                         <form noValidate onSubmit={this.onSubmit}>
-                            <div className="input-field col s12">
+                            <div className="input-field col s12" style={{ "padding-top": "3rem", "paddingLeft": "3rem" }}>
+                                <label htmlFor="email">Title</label>
                                 <input
                                     onChange={this.onChange}
                                     value={this.state.title}
                                     id="title"
                                     type="text"
                                 />
-                                <label htmlFor="email">Title</label>
                             </div>
-                            <div className="input-field col s12">
+                            <div className="input-field col s12" style={{ "padding-top": "3rem", "paddingLeft": "3rem" }}>
+                                <label htmlFor="email">Description</label>
                                 <input
                                     onChange={this.onChange}
                                     value={this.state.desc}
                                     id="desc"
                                     type="text"
                                 />
-                                <label htmlFor="email">Description</label>
                             </div>
                             <button
                                 style={{
@@ -69,6 +68,8 @@ class PostJobs extends Component {
                                     letterSpacing: "1.5px",
                                     marginTop: "1rem",
                                     paddingBottom: "30px",
+                                    marginTop: "21px",
+                                    marginLeft: "21px"
                                 }}
                                 type="submit"
                                 className="btn waves-effect waves-light hoverable blue accent-3"
