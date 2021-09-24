@@ -5,6 +5,7 @@ import SignupForm from './components/Signup/Signup';
 import Profile from './components/Profile/Main_Profile';
 import NavigationBar from './components/Navbar/Explore';
 import PostJobs from "./components/Jobs/PostJob";
+import JobFeed from './components/Jobs/Jobs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/profile' exact component={Profile} />
         <Route path='/explore' exact component={NavigationBar} />
         <Route path='/postjobs' exact component={PostJobs} />
+        <Route path='/jobs' exact component={JobFeed} />
       </Switch>
     </Router>
   );
